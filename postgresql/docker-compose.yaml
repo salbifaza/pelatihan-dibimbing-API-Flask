@@ -1,0 +1,20 @@
+version: "3.8"
+services:
+  postgres-api:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    networks:
+      - postgres-api-network
+    env_file:
+      - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+networks: 
+  postgres-api-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
