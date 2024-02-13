@@ -29,6 +29,7 @@ reference :
 
 
 
+tes
 
 # created a user demouser with password 12345678
 CREATE USER demouser WITH PASSWORD '12345678';
