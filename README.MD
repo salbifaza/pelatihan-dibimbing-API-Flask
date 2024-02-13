@@ -27,17 +27,3 @@ reference :
 
 - https://www.geeksforgeeks.org/making-a-flask-app-using-a-postgresql-database/
 
-
-
-tes
-
-# created a user demouser with password 12345678
-CREATE USER demouser WITH PASSWORD '12345678';
-
-# configured client encoding to utf8
-ALTER ROLE demouser SET client_encoding TO 'utf8';
-ALTER ROLE demouser SET default_transaction_isolation TO 'read committed';
-ALTER ROLE demouser SET timezone TO 'UTC';
-
-# grant all required privileges to demouser over demo db
-GRANT ALL PRIVILEGES ON DATABASE demo TO demouser; 
